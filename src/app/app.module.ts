@@ -15,22 +15,7 @@ import { StoreRouterConnectingModule, RouterStateSerializer } from "@ngrx/router
 import { EffectsModule } from "@ngrx/effects";
 import { reducers, CustomRouterStateSerializer  } from "./store";
 
-/*
-// import { metaReducers, reducers } from './reducers';
 
-// import { RouterEffects } from "./router/effects/router";
-// import { SingleComponent } from './items/single/single.component';
-
-// modules
-// import { ItemsModule } from "./items/items.module";
-
-// services - pushe to products module
-// import { ItemService } from "./core/item.service";
-// import { CartService } from "./core/cart.service";
-// import { HttpClientModule } from "@angular/common/http";
-*/
-
-// formerly in the reducers - index
 const environment = {
   development: true,
   production: false
@@ -38,39 +23,6 @@ const environment = {
 
 export const metaReducers: MetaReducer<any>[] = !environment.production ? [storeFreeze] : [];
 
-/*
-@NgModule({
-  declarations: [
-    AppComponent,
-    TestComponent,
-    ShopComponent,
-    // ItemComponent,
-    // SingleComponent,
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    AppRoutingModule,
-    StoreModule.forRoot(reducers, {metaReducers}),
-    StoreRouterConnectingModule,
-    StoreDevtoolsModule.instrument({
-       maxAge: 5
-     }),
-    EffectsModule.forRoot([RouterEffects]),
-    HttpClientModule,
-    ItemsModule
-  ],
-  providers: [
-    Title,
-     { provide: RouterStateSerializer, useClass: CustomRouterStateSerializer },
-     ItemService,
-     CartService
-   ],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
-
-*/
 
 @NgModule({
   imports: [
