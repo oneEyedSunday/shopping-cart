@@ -28,7 +28,7 @@ export const metaReducers: Array<MetaReducer<any, any>> =  !environment.producti
   storeFreeze
 ] : [localStorageSyncReducer];
 
-function localStorageSyncReducer(reducer: ActionReducer<any>): ActionReducer<any> {
+export function localStorageSyncReducer(reducer: ActionReducer<any>): ActionReducer<any> {
   return localStorageSync({
     keys: ['products'],
     rehydrate: true
