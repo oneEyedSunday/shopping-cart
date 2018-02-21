@@ -21,6 +21,7 @@ const routes: Routes = [
   },
   {
     path: "checkout",
+    canActivate: [fromGuards.ProductsGuard],
     component: fromContainers.CheckoutComponent
   },
   {

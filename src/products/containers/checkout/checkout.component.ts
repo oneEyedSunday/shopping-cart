@@ -40,6 +40,7 @@ export class CheckoutComponent implements OnInit {
 
   ngOnInit(){
     this.title.setTitle("Checkout | Store");
+    this.cartService.bootStrap();
     this.store.select(fromSelectors.getItemForCheckout(CartService.checked))
     .subscribe(x=>{
       this.items = x;
