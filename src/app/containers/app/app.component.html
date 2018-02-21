@@ -1,0 +1,32 @@
+
+<!-- <button (click)="increment()">Increment</button>
+    <div>Current Count: {{ count$ | async }}</div>
+    <button (click)="decrement()">Decrement</button>
+
+    <button (click)="reset()">Reset Counter</button> -->
+
+    <!-- <div>Current Item Number: {{ item$ | async }} </div>
+    <button (click)="incr()">Inccr Qty</button>
+    <input type="number" min="0" (change)="handleChange($event.target.value)"  [(ngModel)]="amount">
+    <button (click)="remove_item()">&times;</button>
+    <button (click)="navigate()">Go</button>
+<router-outlet></router-outlet> -->
+
+
+<div class="app">
+  <div class="app__content">
+    <div class="app__nav">
+      <div>
+        <a routerLink="shop" routerLinkActive="active">Shop</a>
+        <a routerLink="checkout">Checkout</a>
+      </div>
+
+    </div>
+    <div class="app__container">
+      <router-outlet></router-outlet>
+    </div>
+    <div class="app__footer">
+      <p>&copy; Store Inc.</p>
+    </div>
+  </div>
+</div>

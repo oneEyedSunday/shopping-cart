@@ -1,0 +1,11 @@
+:host {
+  display: block;
+  .products__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  single-item {
+    width: 350px;
+  }
+}

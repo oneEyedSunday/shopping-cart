@@ -1,0 +1,23 @@
+:host {
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  margin: 10px;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    span , button span i {
+      font-size: 1.8em;
+    }
+  }
+}

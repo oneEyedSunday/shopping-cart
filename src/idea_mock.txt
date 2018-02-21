@@ -1,0 +1,86 @@
+so basically this is what i want to do
+
+use ngrx/store, router-store, effects to build an App
+
+what type of app?
+cart?
+
+appState {
+  cart : cart
+  ui: uistate
+  router: routerState
+}
+
+cart {
+  itemsState: itemState[]
+}
+
+itemState {
+  _id : number,
+  qty: number
+}
+
+item {
+  _id : number
+  name: string,
+  price: number,
+  qty: number
+}
+
+favourites {
+  item: item
+}
+
+actions:
+action
+action_success  fired from effect
+action_error    for ease of rollback perhaps
+
+
+clear_cart
+clear_cart_success
+clear_cart_error
+
+add_item_to_cart
+add_item_to_cart_error
+add_item_to_cart_success
+
+remove_item_to_cart
+remove_item_to_cart_error
+remove_item_to_cart_success
+
+// just set item quantity in cart to the payload
+incr_item_qty
+incr_item_qty_error
+incr_item_qty_success
+
+decr_item_qty
+decr_item_qty_error
+decr_item_qty_success
+
+reset_item_qty
+reset_item_qty_error
+reset_item_qty_success
+
+
+
+add_item_to_favourite
+add_item_to_favourite_success
+add_item_to_favourite_error
+
+remove_item_from_favourite
+remove_item_from_favourite_success
+remove_item_from_favourite_error
+
+loading
+loaded
+loading_error
+loading_success
+
+search    //router params query
+search_success
+search_error
+
+fetch_item
+fetch_item_success
+fetch_item_error
