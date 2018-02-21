@@ -11,6 +11,8 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import * as fromComponents from "./components";
 import * as fromContainers from "./containers";
 import * as fromServices from "./services";
+import * as fromGuards from "./guards";
+
 
 @NgModule({
   imports: [
@@ -21,7 +23,7 @@ import * as fromServices from "./services";
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [...fromServices.services],
+  providers: [...fromServices.services, ...fromGuards.guards],
   declarations: [
     ...fromContainers.containers,
     ...fromComponents.components
